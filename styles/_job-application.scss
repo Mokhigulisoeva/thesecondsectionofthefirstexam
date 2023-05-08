@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+.job-applications {
+    margin-bottom: 160px;
+
+    .job-applications__container {
+        width: 1106px;
+        margin: 0 auto;
+
+        .job-applications__wrapper {
+
+            .job-application {
+                padding: 32px 64px 35px 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-between;
+                margin-bottom: 24px;
+                background-color: var(--background-color);
+
+                .job-application_content {
+
+                    .job-application_content_name {
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07143px;
+                        color: $title-color;
+                        margin-bottom: 8px;
+                    }
+
+                    .job-application_content_place {
+                        font-family: 'Lexend Deca';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: $title-color;
+                    }
+                }
+
+                .job-application__button {
+                    button {
+                        padding: 14px 66.5px 14px 67.5px;
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 25px;
+                        background-color: var(--link-hover-color);
+                        text-align: center;
+                        color: var(--background-color);
+                        border: 3px solid var(--link-hover-color);
+                        cursor: pointer;
+                        transition: 0.3s;
+                    }
+
+                    button:hover {
+                        background-color: var(--white-color);
+                        border: 3px solid $link-hover-color;
+                        color: $link-hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+.job-applications{
+    .job-applications__container{
+        width: 90%;
+        margin: 0 auto;
+
+        .job-applications__wrapper{
+
+            .job-application{
+                padding: 34px 48px 33px 48px;
+                
+            }
+        }
+
+    }
+}
+}

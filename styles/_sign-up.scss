@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+.sign-up {
+    background-image: url(./../images/Mask\ \(2\).svg);
+    background-repeat: no-repeat;
+
+    .sign-up__container {
+        width: 1106px;
+        margin: 0 auto;
+
+        .sign-up_content_wrapper {
+            padding: 102px 0;
+            display: flex;
+
+            align-items: center;
+
+            column-gap: 336px;
+
+            .sign-up__content {
+                font-family: 'Space Mono';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14286px;
+                color: var(--white-color);
+            }
+
+            .sign-up__logos {
+                display: flex;
+                column-gap: 18px;
+
+                .sign-up_logo_appstore {
+                    width: 159px;
+                }
+
+                .sign-up_logo_googleplay {
+                    width: 182px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:576px) {
+
+.sign-up{
+    .sign-up__container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+}

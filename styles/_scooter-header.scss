@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+.careers-header {
+    margin-bottom: 117px;
+
+    .careers-header__container {
+        width: 1106px;
+        margin: 0 auto;
+
+        .careers-header__navbar {
+            padding: 22px 0 21px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .careers-header_navbar_logo_menu {
+                img {
+                    display: none;
+                }
+            }
+
+            .careers-header_navbar_logo {
+
+
+                img {
+                    width: 107.82px;
+                    height: 28.56px;
+                    margin-right: 58.18px;
+                }
+            }
+
+            .careers-header_navbar_links {
+
+                margin-right: 500px;
+                display: flex;
+                column-gap: 32px;
+
+                a {
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: var(--link_color);
+                    text-decoration: none;
+                    transition: 0.3s;
+
+                }
+
+                a:hover {
+                    color: $link-hover-color;
+                }
+
+            }
+
+            .careers-header_navbar_button {
+                button {
+                    padding: 14px 39px;
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: var(--white-color);
+                    background-color: $link-hover-color ;
+                    border: 3px $link-hover-color solid;
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+
+                button:hover {
+                    background-color: var(--white-color);
+                    border: 3px solid $link-hover-color;
+                    color: $link-hover-color;
+                }
+            }
+        }
+    }
+
+    .careers-header__body {
+        padding: 68.5px 0 68.5px;
+
+        background-image: url(./../images/Bitmap.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .careers-header_body_container {
+
+            width: 1106px;
+            margin: 0 auto;
+
+            .careers-header_content_title {
+                font-family: 'Space Mono';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 56px;
+                letter-spacing: -2.5px;
+                color: var(--white-color);
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .careers-header {
+        margin-bottom: 120px;
+        .careers-header__container {
+            width: 90%;
+            margin: 0 auto;
+
+            .careers-header__navbar {
+
+                .careers-header_navbar_logo_menu {
+                    img {
+                        display: block;
+                        margin-right: 130.31px;
+                    }
+                }
+
+
+                .careers-header_navbar_links {
+                    a {
+                        display: none;
+                    }
+                }
+
+                .careers-header_navbar_button {
+                    button {
+                        display: none;
+                    }
+
+                }
+
+            }
+        }
+
+        .careers-header__body {
+            .careers-header_body_container {
+                width: 70%;
+                margin: 0 auto;
+
+                .careers-header_content_title {
+                    text-align: center;
+                    font-size: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: -1.78571px;
+                }
+            }
+        }
+    }
+
+    
+
+}

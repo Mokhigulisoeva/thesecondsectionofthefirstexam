@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+.joining-mission {
+    margin-bottom: 120px;
+    position: relative;
+
+    .joining-mission_container {
+        width: 1106px;
+        margin: 0 auto;
+
+        .joining-mission_wrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 220px;
+
+            .joining-mission_content {
+                .joining-mission_content_title {
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: -2.14286px;
+                    color: $title-color;
+                    margin-bottom: 24px;
+                }
+
+                .joining-mission_content_description {
+                    font-family: 'Lexend Deca';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: var(--link_color);
+                    margin-bottom: 40px;
+                }
+
+                .joining-mission_content_button {
+                    button {
+                        @include my_btn
+                    }
+
+                    button:hover {
+                        @include my_btn_hover
+                    }
+                }
+            }
+
+            .joining-mission_image_wrapper {
+                .joining-mission_img_wrapper {
+                    border-radius: 50%;
+
+                    .joining-mission_img {
+                        width: 445px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .joining-mission_wrapper_arrow {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 3;
+                }
+
+                .joining-mission_background_img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: -2;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .joining-mission {
+
+        .joining-mission_container {
+            width: 90%;
+            margin: 0 auto;
+
+            .joining-mission_wrapper {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .joining-mission_content {
+
+                    .joining-mission_content_title {
+                        font-size: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        letter-spacing: -1.42857px;
+                    }
+
+                    .joining-mission_content_description {
+                        font-size: 15px;
+                        line-height: 25px;
+                        text-align: center;
+                    }
+
+                    .joining-mission_content_button {
+                        font-size: 15px;
+                        line-height: 25px;
+                        text-align: center;
+
+                    }
+
+                }
+
+                .joining-mission_image_wrapper {
+
+                    .joining-mission_img_wrapper {
+
+                        .joining-mission_img {
+                            padding: 30px 50px;
+                            width: 445px;
+                            margin-bottom: 64px;
+                        }
+                    }
+
+                    .joining-mission_wrapper_arrow {
+                        width: 554.38px;
+                        bottom: 390px;
+
+                    }
+
+                    .joining-mission_background_img {
+                        width: 90px;
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}

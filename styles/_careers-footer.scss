@@ -1,0 +1,67 @@
+.careers-footer {
+    background-color: #333A44;
+    ;
+
+    .careers-footer__container {
+        width: 1106px;
+        margin: 0 auto;
+
+        .careers-footer__wrapper {
+            display: flex;
+            align-items: center;
+            padding: 35px 0 32.45px;
+
+            .careers-footer__logo {
+                margin-right: 58.58px;
+
+            }
+
+            .careers-footer__links {
+                margin-right: 530px;
+
+                a {
+                    text-decoration: none;
+                    margin-right: 32px;
+                    color: var(--link_color);
+                    transition: 0.3s;
+                }
+
+                a:hover {
+                    color: var(--link-hover-color);
+                }
+            }
+
+            .careers-footer__apps {
+
+                .careers-footer__img {
+                    margin-right: 24px;
+                    transition: 0.3s;
+                }
+
+                .careers-footer__img:hover {
+                    background-color: var(--background-hover-img);
+
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .careers-footer {
+        .careers-footer__container {
+            width: 90%;
+            margin: 0 auto;
+
+            .careers-footer__wrapper {
+                .careers-footer__logo {}
+
+                .careers-footer__links {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+}

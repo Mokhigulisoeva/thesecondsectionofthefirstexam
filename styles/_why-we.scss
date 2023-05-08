@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+.why-we {
+    margin-bottom: 120px;
+
+    .why-we__container {
+        width: 1106px;
+        margin: 0 auto;
+
+        .why-we__title {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: -2.14286px;
+            color: $title-color;
+            margin-bottom: 103px;
+        }
+
+        .why-we_services_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+
+            .why-we_service {
+
+
+                .why-we_service_img {
+                    margin-bottom: 32px;
+                }
+
+                .why-we_service_title {
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+                    letter-spacing: -1.07143px;
+                    color: $title-color;
+                    margin-bottom: 27px;
+                }
+
+                .why-we_service_description {
+                    font-family: 'Lexend Deca';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: var(--link_color);
+
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .why-we {
+
+        .why-we__container {
+            width: 90%;
+            margin: 0 auto;
+
+            .why-we__title {
+                font-size: 48px;
+                line-height: 48px;
+                text-align: center;
+                letter-spacing: -2.14286px;
+                margin-bottom: 105px;
+            }
+
+            .why-we_services_wrapper {
+                display: block;
+
+                .why-we_service {
+                    margin-bottom: 55px;
+
+                    .why-we_service_img {
+                        margin-bottom: 32px;
+                        
+
+                    }
+
+                    .why-we_service_title {
+                        font-size: 24px;
+                        line-height: 28px;
+                        text-align: center;
+                        letter-spacing: -1.07143px;
+                        margin-bottom: 27px;
+                    }
+
+                    .why-we_service_description {
+                        font-size: 15px;
+                        line-height: 25px;
+                        text-align: center;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
