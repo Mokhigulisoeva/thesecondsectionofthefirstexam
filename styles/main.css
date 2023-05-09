@@ -104,12 +104,37 @@ body {
   color: var(--white-color);
 }
 
+@media screen and (max-width: 767px) {
+  .careers-header .careers-header__container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .careers-header .careers-header__container .careers-header__navbar .careers-header_navbar_logo_menu img {
+    display: none;
+  }
+  .careers-header .careers-header__container .careers-header__navbar .careers-header_navbar_logo img {
+    margin-right: 0;
+    padding: 0 12px;
+  }
+  .careers-header .careers-header__container .careers-header__navbar .careers-header_navbar_links {
+    margin-right: 0;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .careers-header .careers-header__body .careers-header_body_container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .careers-header .careers-header__body .careers-header_body_container .careers-header_content_title {
+    margin-left: 58px;
+  }
+}
 @media screen and (max-width: 576px) {
   .careers-header {
     margin-bottom: 120px;
   }
   .careers-header .careers-header__container {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .careers-header .careers-header__container .careers-header__navbar .careers-header_navbar_logo_menu img {
@@ -208,7 +233,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .joining-mission .joining-mission_container {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .joining-mission .joining-mission_container .joining-mission_wrapper {
@@ -295,7 +320,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .why-we .why-we__container {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .why-we .why-we__container .why-we__title {
@@ -426,6 +451,12 @@ body {
   width: 182px;
 }
 
+@media screen and (max-width: 576px) {
+  .sign-up .sign-up__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .careers-footer {
   background-color: #333A44;
 }
@@ -459,4 +490,14 @@ body {
 }
 .careers-footer .careers-footer__container .careers-footer__wrapper .careers-footer__apps .careers-footer__img:hover {
   background-color: var(--background-hover-img);
+}
+
+@media screen and (max-width: 576px) {
+  .careers-footer .careers-footer__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .careers-footer .careers-footer__container .careers-footer__wrapper .careers-footer__links {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

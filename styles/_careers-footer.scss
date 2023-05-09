@@ -23,6 +23,7 @@
                     text-decoration: none;
                     margin-right: 32px;
                     color: var(--link_color);
+                    cursor: pointer;
                     transition: 0.3s;
                 }
 
@@ -55,8 +56,6 @@
             margin: 0 auto;
 
             .careers-footer__wrapper {
-                .careers-footer__logo {}
-
                 .careers-footer__links {
                     margin-right: 0;
                 }

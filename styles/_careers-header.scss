@@ -106,9 +106,51 @@
     }
 }
 
+@media screen and (max-width:767px) {
+    .careers-header {
+        .careers-header__container {
+            width: 70%;
+            margin: 0 auto;
+
+            .careers-header__navbar {
+                .careers-header_navbar_logo_menu {
+                    img {
+                        display: none;
+                    }
+
+                }
+
+                .careers-header_navbar_logo {
+                    img {
+                        margin-right: 0;
+                        padding: 0 12px;
+                    }
+                }
+
+                .careers-header_navbar_links {
+                    margin-right: 0;
+                    column-gap: 10px;
+            }
+        }
+    }
+    .careers-header__body{
+        padding: 72px 0 72px;
+       
+        .careers-header_body_container{
+            width: 70%;
+            margin: 0 auto;
+            .careers-header_content_title{
+                margin-left: 0px;
+            }
+        }
+    }
+    }
+}
+
 @media screen and (max-width: 576px) {
     .careers-header {
         margin-bottom: 120px;
+
         .careers-header__container {
             width: 90%;
             margin: 0 auto;
@@ -155,6 +197,6 @@
         }
     }
 
-    
+
 
 }
